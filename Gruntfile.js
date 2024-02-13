@@ -9,12 +9,17 @@ module.exports = function (grunt) {
 
         // Copy the front into the build directory
         copy: {
-            files: [
-                {expand: true, flatten: true, src: ['node_modules/animate.css/animate.css'], dest: 'assets/css', filter: 'isFile'},
-            ],
+            build: {
+                files: [
+                    {expand: true, flatten: true, src: ['node_modules/animate.css/animate.css'], dest: 'assets/css/', filter: 'isFile'},
+                    {expand: true, flatten: true, src: ['node_modules/swiper/swiper-bundle.min.css'], dest: 'assets/css/', filter: 'isFile'},
+                    {expand: true, flatten: true, src: ['node_modules/swiper/swiper-bundle.min.js'], dest: 'assets/js/', filter: 'isFile'},
+                    {expand: true, flatten: true, src: ['node_modules/wowjs/dist/wow.min.js'], dest: 'assets/js/', filter: 'isFile'},
+                ],
+            },
         },
     });
 
     // Build task(s).
-    grunt.registerTask('build', ['copy:files']);
+    grunt.registerTask('build', ['copy:build:files']);
 };

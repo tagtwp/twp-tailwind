@@ -1,10 +1,11 @@
 {
   "name": "twp-tailwind",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "",
   "main": "tailwind.config.js",
   "scripts": {
     "build-css": "tailwindcss -i ./src/tailwind.css -o ./assets/css/tailwind.css -w",
+    "build": "grunt build"
   },
   "repository": {
     "type": "git",
