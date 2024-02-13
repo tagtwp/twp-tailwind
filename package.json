@@ -4,7 +4,7 @@
   "description": "",
   "main": "tailwind.config.js",
   "scripts": {
-    "build-css": "tailwindcss -i ./src/tailwind.css -o ./assets/css/tailwind.css -w",
+    "watch": "tailwindcss -i ./src/tailwind.css -o ./assets/css/tailwind.css -w",
     "build": "grunt build"
   },
   "repository": {
