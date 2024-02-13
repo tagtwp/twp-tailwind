@@ -14,7 +14,7 @@ module.exports = function (grunt) {
                     {expand: true, flatten: true, src: ['node_modules/animate.css/animate.css'], dest: 'assets/css/', filter: 'isFile'},
                     {expand: true, flatten: true, src: ['node_modules/swiper/swiper-bundle.min.css'], dest: 'assets/css/', filter: 'isFile'},
                     {expand: true, flatten: true, src: ['node_modules/swiper/swiper-bundle.min.js'], dest: 'assets/js/', filter: 'isFile'},
-                    {expand: true, flatten: true, src: ['node_modules/wowjs/dist/wow.min.js'], dest: 'assets/js/', filter: 'isFile'},
+                    {expand: true, flatten: true, src: ['node_modules/wow.js-juzi/dist/wow.min.js'], dest: 'assets/js/', filter: 'isFile'},
                 ],
             },
         },
