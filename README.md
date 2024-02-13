@@ -11,4 +11,4 @@ Twp crafted in a way that you can use with almost all sort of web project. This 
 ### Development
 
 4. Run `npm run watch`
-5. Run `npm run build` Build full project new folder build and zip project with version
+5. Run `npm run build` zip project with version on build
