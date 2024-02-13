@@ -18,8 +18,19 @@ module.exports = function (grunt) {
                 ],
             },
         },
+        // Compress build directory into <name>.zip and <name>-<version>.zip
+        compress: {
+            build: {
+                options: {
+                    mode: 'zip',
+                    archive: './build/<%= pkg.name %>-v<%= pkg.version %>.zip',
+                },
+                src: ['assets/**', '*.html'],
+                dest: '<%= pkg.name %>/',
+            },
+        },
     });
 
     // Build task(s).
-    grunt.registerTask('build', ['copy:build:files']);
+    grunt.registerTask('build', ['copy:build:files', 'compress:build']);
 };
