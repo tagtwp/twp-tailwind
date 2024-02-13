@@ -1,0 +1,30 @@
+{
+  "name": "twp-tailwind",
+  "version": "1.0.1",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build-css": "tailwindcss -i ./src/tailwind.css -o ./assets/css/tailwind.css -w",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tagtwp/twp-tailwind.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^1.6.1",
+    "grunt-cli": "^1.4.3",
+    "grunt-contrib-copy": "^1.0.0",
+    "load-grunt-tasks": "^5.1.0",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "tailwindcss": "^3.4.1"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "swiper": "^11.0.6",
+    "wowjs": "^1.1.3"
+  }
+}
