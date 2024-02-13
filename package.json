@@ -7,7 +7,7 @@
     "development:tailwind:frontend": "tailwindcss -i ./src/tailwind.css -o ./assets/css/tailwind.css",
     "development:esbuild": "npx esbuild ./src/main.js --target=esnext --bundle --outdir=./assets/js --out-extension:.js=.min.js",
     "development": "run-p \"development:**\"",
-    "dev": "npm run development",
+    "dev": "npm run development && grunt copy:build:files",
     "watch:tailwind:frontend": "npm run development:tailwind:frontend -- --watch",
     "watch:browser-sync": "browser-sync start --server --files \"**\" --no-notify --no-inject-changes",
     "watch": "run-p \"watch:**\"",
