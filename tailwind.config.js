@@ -1,5 +1,9 @@
 module.exports = {
-    content: ["./*.html", "./assets/**/*.js"],
+    content: [
+        './*.html',
+        './assets/**/*.js',
+        'node_modules/preline/dist/*.js',
+    ],
     darkMode: "class",
     theme: {
         screens: {
@@ -62,5 +66,7 @@ module.exports = {
     variants: {
         extend: {},
     },
-    plugins: [],
+    plugins: [
+        require('preline/plugin'),
+    ],
 }
