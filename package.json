@@ -5,7 +5,7 @@
   "main": "tailwind.config.js",
   "scripts": {
     "development:tailwind:frontend": "tailwindcss -i src/tailwind/tailwind.css -o ./assets/css/tailwind.css",
-    "development:esbuild": "npx esbuild ./src/main.js --target=esnext --bundle --outdir=./assets/js --out-extension:.js=.min.js",
+    "development:esbuild": "npx esbuild ./src/js/main.js --target=esnext --bundle --outdir=./assets/js --out-extension:.js=.min.js",
     "development": "run-p \"development:**\"",
     "dev": "npm run development && grunt copy:build:files",
     "watch:tailwind:frontend": "npm run development:tailwind:frontend -- --watch",
